@@ -1,0 +1,15 @@
+{
+    "images": [
+      {"url": "img/jakegib_300x200.jpeg", "caption": "Jake Paul vs AnesonGib" },
+      {"url": "img/ksiloganevent_300x200.jpg", "caption": "KSI vs Logan Paul 2" },
+      {"url": "img/loganfloyd_300x200.jpg", "caption": "logan Paul  vs Floyd Mayweather" },
+      {"url": "img/jakemike_300x200.jpg", "caption": "Jake Paul vs Mike tyson" },
+      {"url": "img/dejfloyd_300x200.webp", "caption": "Deji vs Floyd Mayweather" },
+      {"url": "img/tommyksi_300x200.jpg", "caption": "KSI vs Tommy Fury" },
+      {"url": "img/jaketommy_300x200.jpg", "caption": "Jake Paul vs Tommy Fury" },
+      {"url": "img/waliddeen_300x200.webp", "caption": "Walid Sharks vs DeenTheGreat" },
+      {"url": "img/slimgib_300x200.jpg", "caption": "Slim vs AnesonGib" }
+      
+    ]
+  }
+  

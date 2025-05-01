@@ -1,0 +1,8 @@
+{
+    "images": [
+        { "url": "img/misfits_resized.jpeg", "alt": "Misfits Boxing", "caption": "Misfits Boxing" },
+        { "url": "img/mvpwip_resized.jpg", "alt": "Most Valuable Promotions", "caption": "Most Valuable Promotions" },
+        { "url": "img/socialgloves_resized.jpg", "alt": "Social Gloves", "caption": "Social Gloves"},
+        { "url": "img/kp_resized.jpg", "alt": "Kingpyn Boxing", "caption": "Kingpyn Boxing" }
+    ]
+}

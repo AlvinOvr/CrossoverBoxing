@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url(../img/bgimg.jpg); /* Background image */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Ensure the image stays fixed while scrolling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh; /* Ensure the body covers the full viewport height */
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    /* Removed the semi-transparent white background */
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the header */
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: #3b82f6;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Introduction Section */
+main {
+    padding: 50px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    background: #3b82f6; /* Blue background */
+    color: white; /* White text */
+    padding: 10px; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Fit content width */
+}
+
+p {
+    font-size: 1.2rem;
+    padding: 20px;
+    background: #3b82f6;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid #1e40af; /* Blue border */
+    margin-bottom: 30px; /* Space between paragraph and "Learn More?" heading */
+}
+
+/* Learn More Section */
+h2 + .menu {
+    margin-top: 10px; /* Space between "Learn More?" heading and menu */
+}
+
+/* Navigation Menu */
+.menu {
+    background: #3b82f6;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Spread items to the ends */
+    flex-wrap: wrap;
+    border-radius: 10px; /* Rounded corners for the menu */
+    width: 100%; /* Ensure the menu takes full width */
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    width: 100%; /* Ensure the menu takes full width */
+    justify-content: space-between; /* Spread items to the ends */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.menu li {
+    padding: 10px 20px;
+    border-radius: 25px; /* Rounded corners for the bubble effect */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    text-align: center; /* Center the text */
+}
+
+.menu li:hover {
+    background: #facc15; /* Yellow background on hover */
+}
+
+.menu a {
+    text-decoration: none;
+    color: white; /* White text by default */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+    display: block; /* Make the <a> element take full width */
+}
+
+.menu a:hover {
+    color: black; /* Black text on hover (optional, adjust as needed) */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 10px;
+    }
+    
+    .logo {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 100%;
+        padding: 30px;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        width: 100%; /* Full width for mobile view */
+        text-align: center; /* Center text for mobile view */
+    }
+}
+
+/* Extra responsive tweaks for smaller phones (optional) */
+@media (max-width: 500px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .menu a {
+        font-size: 1rem;
+    }
+}

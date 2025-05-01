@@ -1,0 +1,61 @@
+/* Title Bar */
+.title-bar {
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Menu Bar */
+.menu-bar {
+    background-color: #3b82f6;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu-bar a {
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+.menu-bar a:hover {
+    background-color: #facc15;
+    color: black;
+}
+
+
+/* Info Section Below Carousel */
+.info {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.info p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+
+footer {
+    background-color: #3b82f6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}

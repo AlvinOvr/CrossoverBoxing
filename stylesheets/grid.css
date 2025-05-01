@@ -1,0 +1,114 @@
+body {
+    background-image: url(../img/bgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    background-position: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Image container for each image + caption */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Caption below each image */
+.caption {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #444;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 8px;
+    max-width: 90%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #3b82f6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+/* Mobile Adaptability */
+@media (max-width: 768px) {
+    .title-bar {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .menu-bar a {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
+
+    .intro-text {
+        margin: 20px 10px;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .caption {
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-bar {
+        flex-direction: column;
+    }
+
+    .menu-bar a {
+        padding: 12px;
+        border-top: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .intro-text {
+        font-size: 0.95rem;
+    }
+
+    .caption {
+        font-size: 0.85rem;
+    }
+}
